@@ -1,0 +1,64 @@
+.navbar {
+  //   border: 2px solid;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 63px;
+  font-family: "Raleway";
+  font-size: 18px;
+
+  .left {
+    // border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    width: 417px;
+    .logo {
+      background: linear-gradient(90.72deg, #0096ff 42.18%, #0048ff 93.77%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 45px;
+    }
+    .category {
+      ul {
+        display: flex;
+        column-gap: 34px;
+        align-items: center;
+        li {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    // border: 2px solid;
+    column-gap: 32px;
+    .searchIcon {
+      img {
+        width: 19px;
+      }
+    }
+    .btn-joinNow {
+      button {
+        border: none;
+        outline: none;
+        padding: 10px 32px;
+        border-radius: 52px;
+        background: linear-gradient(266.79deg, #0048ff 4.63%, #0096ff 100%);
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}

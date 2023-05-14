@@ -1,0 +1,346 @@
+.paymentForm {
+  border: 2px solid;
+  width: calc(65vw - 39%);
+  width: 400px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  margin-top: 20px;
+  .progrssbar {
+    // border: 2px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+    margin-top: 10px;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .number {
+        border: 2px solid;
+        border-radius: 68%;
+        padding-block: 2px;
+        padding-inline: 11px;
+        background: #0096ff;
+        color: aliceblue;
+        border: none;
+      }
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  .fromTitle {
+    text-align: center;
+    font-size: 21px;
+    margin-block: 12px;
+    font-weight: 800;
+    color: #3c4852;
+  }
+  .input {
+    // border: 2px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+    .expiredOffer {
+      border: 2px solid #bebebe;
+      border-radius: 4px;
+      background: #e7e7e7;
+      color: #bebebe;
+      font-weight: 600;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-inline: 10px;
+      padding-inline: 10px;
+      position: relative;
+      &::before {
+        content: "Offer expired";
+        position: absolute;
+        font-size: 0.62rem;
+        top: 0px;
+        left: 29px;
+        padding-inline: 27px;
+        padding-block: 2px;
+        border-radius: 0px 0px 5px 5px;
+        color: aliceblue;
+        background: #f77171;
+      }
+      .Content {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        img {
+          width: 21px;
+        }
+      }
+      .price {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 8px;
+        .totalamt {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          font-size: 0.8rem;
+          span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+        }
+        .perMonth {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .recommendedOffer {
+      border-radius: 4px;
+      background: #d7eddd;
+      border: 2px solid #47ba68;
+      color: #000000;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-inline: 10px;
+      //   padding-block: 14px;
+      padding-inline: 10px;
+      margin-top: 9px;
+      position: relative;
+      &::before {
+        content: "Recommended";
+        position: absolute;
+        // border: 2px solid;
+        font-size: 0.62rem;
+        top: 0px;
+        left: 29px;
+        padding-inline: 27px;
+        padding-block: 2px;
+        border-radius: 0px 0px 5px 5px;
+        color: aliceblue;
+        background: #47ba68;
+      }
+      .Content {
+        // border: 2px solid;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        color: #3c4852;
+        img {
+          width: 21px;
+        }
+      }
+      .price {
+        // border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 8px;
+        .totalamt {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          font-size: 15px;
+          color: #3c4852;
+          span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+        }
+        .perMonth {
+          font-size: 0.7rem;
+          color: #3c4852;
+        }
+      }
+    }
+    .otherOffer {
+      border-radius: 4px;
+      background: #ffffff;
+      border: 2px solid rgb(208, 208, 208);
+      color: #000000;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-inline: 10px;
+      //   padding-block: 14px;
+      padding-inline: 10px;
+      margin-top: 9px;
+      position: relative;
+
+      .Content {
+        // border: 2px solid;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        color: #3c4852;
+        img {
+          width: 21px;
+        }
+      }
+      .price {
+        // border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 8px;
+        .totalamt {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          font-size: 0.8rem;
+          color: #3c4852;
+          span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+        .perMonth {
+          color: #3c4852;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .summaryCon {
+    width: 87%;
+    padding-inline: 19px;
+    margin-top: 17px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+
+    &::before {
+      content: "";
+      border-top: 2px solid #bebebe;
+      position: absolute;
+      top: 0px;
+      width: 95%;
+      left: 14px;
+    }
+    .subscriptionFee {
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 0.8rem;
+        color: #3c4852;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .offer {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 7px;
+      padding-inline: 10px;
+      background: linear-gradient(
+        135deg,
+        rgba(222, 67, 19, 0.2) 0%,
+        rgba(222, 67, 19, 0.2) 0.75%,
+        rgba(222, 67, 19, 0.2) 2.92%,
+        rgba(222, 68, 20, 0.2) 6.37%,
+        rgba(223, 69, 21, 0.2) 10.97%,
+        rgba(223, 72, 22, 0.2) 16.59%,
+        rgba(224, 75, 24, 0.2) 23.1%,
+        rgba(225, 80, 27, 0.2) 30.37%,
+        rgba(227, 86, 31, 0.2) 38.27%,
+        rgba(229, 94, 36, 0.2) 46.66%,
+        rgba(231, 104, 43, 0.2) 55.41%,
+        rgba(235, 117, 51, 0.2) 64.39%,
+        rgba(238, 132, 60, 0.2) 73.47%,
+        rgba(243, 149, 71, 0.2) 82.52%,
+        rgba(248, 169, 84, 0.2) 91.41%,
+        rgba(254, 193, 99, 0.2) 100%
+      );
+      border-radius: 8px;
+      border: 2px solid #eb7533;
+
+      .offerText {
+        span {
+          font-size: 13px;
+          font-weight: 700;
+          color: #de4313;
+        }
+        .bottomline {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          color: #de4313;
+          img {
+            width: 20px;
+          }
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #3c4852;
+        font-weight: 600;
+      }
+    }
+    .finalAmt {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 18px;
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 700;
+        color: #3c4852;
+      }
+    }
+  }
+  .proceedBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 28px;
+    padding-top: 11px;
+    .secondary {
+      padding-block: 7px;
+      padding-inline: 52px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 2px solid #f77171;
+      color: #f77171;
+    }
+    .primary {
+      padding-block: 9px;
+      padding-inline: 22px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #e7e7e7;
+      background: #3eaf5e;
+      border-radius: 3px;
+    }
+  }
+  .icon {
+    padding-inline: 22px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+
+    img {
+      width: 84px;
+    }
+  }
+}
